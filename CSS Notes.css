@@ -1,0 +1,936 @@
+
+
+
+/* Universal Selector ,, Priority = Less */
+
+*{
+
+};
+
+/* Body Selector */
+
+body{
+
+};
+
+/* Type Selector */
+
+h1,h2,h3{
+
+};
+
+/* ID Selector ,, Should Be Uuique*/
+
+#box{
+
+}
+
+/* CLASS Selector ,, Can Be Used Multiple Times */
+
+.box{
+
+};
+
+/* Child OR Descendent Selector */
+
+div > p{
+
+};
+
+/* OR Can Be Written Like This*/
+
+div p{
+
+};
+
+/* If we Give Two Styles For a Same Selector,
+we Can Chose Which One Should Be DISplayed,
+For That We Use "!important" Keyword */
+
+h1 {
+    color: red !important;
+}
+
+
+
+/* Colors In CSS */
+
+/* RGB */
+h3{
+    color: rgb(red, green, blue);
+}
+
+/* RGBA */
+/* Alpha Is For Transparency Or Opacity "0 To 1" */
+h3{
+    color: rgba(red, green, blue, 0.5);
+};
+
+/* HEX */
+h3{
+    color: #64964b;
+};
+
+/* HSL */
+/* Hue Saturation Lightness */
+h3{
+    color: hsl(120, 100%, 50%);
+};
+
+/* HSLA */
+/* Hue Saturation Lightness Alpha */
+h3{
+    color: hsl(120, 100%, 50%, 0.5);
+};
+
+/* Background Color */
+
+h3{
+    background-color: #64964b;
+};
+
+
+
+/* FONT */
+
+body{
+    font-family: Arial, sans-serif;
+};
+
+/* Font Size */
+
+body{
+    
+    /* we use pixels "px" as value input */
+    font-size: 12px; 
+    
+    /* we use percentage "%" as value input */
+    font-size: 80%;
+    
+    /* we use "em"(Width of 'm')as value input */
+    font-size: 1.5em;
+};
+
+/* Font Weight */
+
+body{
+    
+    /* show font weight in light format */
+    font-weight: light;
+    
+    /* show font weight in Medium format */
+    font-weight: normal;
+    
+    /* show font weight in BOLD format*/
+    font-weight: bold;
+};
+
+/* Font Style */
+
+body{
+    
+    /* show font style in italic format */
+    font-style: italic;
+    
+    /* show font style in normal format */
+    font-style: normal;
+    
+    /* show font style in slanting format */
+    font-style: oblique;
+};
+
+/* Text Transform */
+
+body{
+    
+    /* show text transform in uppercase format */
+    text-transform: uppercase;
+    
+    /* show text transform in lowercase format */
+    text-transform: lowercase;
+
+    /* show text transform in capitalize format */
+    text-transform: capitalize;
+};
+
+/* Text Decoration */
+
+body{
+    
+    /* show text decoration in underline format */
+    text-decoration: underline;
+    
+    /* show text decoration in overline format */
+    text-decoration: overline;
+    
+    /* show text decoration in line-through format */
+    text-decoration: line-through;
+};
+
+/* Text Spacing */
+
+body{
+
+    /* It Gives More Spacing Between Each Letter */
+    letter-spacing: 5px;
+
+    /* It Gives More Spacing Between Each Word */
+    word-spacing: 5%;
+
+};
+
+/* Text Alignment */
+
+body{
+
+    /* Aligns The Text In The Center */
+    text-align: center;
+
+    /* Aligns The Text In The Left */
+    text-align: left;
+
+    /* Aligns The Text In The Right */
+    text-align: right;
+
+    /* Aligns The Text with same on equal side */
+    text-align: justify;
+
+};
+
+/* Vertical Alignment */
+
+body{
+
+    /* Aligns the Content at the Middle */
+    vertical-align: middle;
+
+    /* Aligns the Content at the Bottom */
+    vertical-align: bottom;
+
+    /* Aligns the Content at the Top */
+    vertical-align: top;
+};
+
+/* Text Indent */
+/* It Is Used to move The First Word Of The Paragraph To The Right Side */
+
+body{
+
+    /*  */
+    text-indent: 10px;
+};
+
+/* Text Shadow */
+
+body{
+
+    /* First px = change Horizontal direction of the shadow
+             6px = 6px to right
+             -6px = -6px to left */
+    
+    /* Second px = change Vertical direction of the shadow
+             2px = 2px to Down
+             -2px = -2px to Up */
+
+    /* Third px = blur of the shadow */
+
+    /* Fourth = color of the shadow */
+
+    text-shadow: 6px 2px 2px #000000;
+
+};
+
+/* Pseudo Element */
+
+p::first-letter{
+
+    /* Changes the first Letter Of the First Word of The paragrah */
+
+    font-size: 2em;
+
+};
+
+p::first-line{
+    /* Changes the first Line of The paragrah */
+    color: red;
+};
+
+
+/* Hover */
+
+a:hover{
+    
+    /* Changes the color of the link when hover */
+    color: blue;
+
+};
+
+/* Active */
+
+a:active{
+    
+    /* Changes the color of the link when click */  
+    color: green;
+
+};
+
+/* Focus */
+
+a:focus{
+
+    /*  It is generally triggered when the user clicks 
+    or taps on an element or selects it */
+
+    /* It is mainly used in forms for input tag and textarea  */
+    color: aqua;
+
+};
+
+
+
+/* BOX in CSS */
+
+/* Border */
+
+body{
+
+    /* First px = Thickness of the border */
+    /* Second = Style of the border */
+    /* Third = Color of the border */
+    border: 2px solid black;
+
+/* Border-width = Top,Right,Bottom,Left */
+    border-width: 15px 5px 8px 6px ;
+
+};
+
+/* Border Image */
+
+.box{
+
+    /* This image will be displayed as a border*/
+       
+ /* round = it will be scaled to fit the border area */
+    border-image : url("") round;
+
+ /* stretch = it will be stretched to fit the border area */
+    border-image : url(" ") stretch;
+
+ /* repeat = it will be repeated in the border area  */
+    border-image : url(" ") repeat;
+
+}
+
+
+/* Border Radius */
+
+.box{
+
+    /* Border radius is used to make the corners of the box rounded */
+    
+    /* Sharpness of the corner of the container */
+    border-radius: 15px;
+
+/*  border-radius: Top & Bottom, Left & Right */
+    border-radius: 10px 5px ;
+
+/* border radius : Top , Left &Right , Bottom */
+    border-radius: 10px 5px 10px ;
+
+};
+
+/* Width */
+
+.box{
+
+    /* Width of the box */
+    width: 300px;
+    
+    /* minimum width of the box */
+    min-width: 200px;
+    
+    /* maximum width of the box */
+    max-width: 500px;
+
+};
+
+/* Height */
+
+.box{
+
+    /* Height of the box */
+    height: 300px;
+
+    /* minimum height of the box */
+    min-height: 300px;
+
+    /* Maximum height of the box */
+    max-height: 300px;
+
+};
+
+/* Overflow */
+
+.box{
+    
+    /* Overflow: Hidden */
+    overflow: hidden;
+    
+    /* Overflow: Scroll */
+    overflow: scroll;
+    
+};
+
+/* Padding */
+
+.box{
+
+    /* Gives Padding inside the Container */
+    padding: 15px;
+    
+};
+
+/* Margin */
+
+.box{
+
+    /* Gives Margin outside the Container */
+    margin: 20px;
+
+    /* to give margin Equal on Left & Right */
+    /* this makes the box centered */
+    margin: 20px auto 20px auto;
+
+};
+
+/* Display */
+
+li{
+    /* this will display list items as inline */
+    /* This will used to make Navbar */
+    display: inline;
+
+    /* it will not display the elements */
+    display: none;
+
+    /* it will display the elements as block(line by line) */
+    display: block;
+
+    /* it will display as inline but its properties are all in block */
+    display: inline-block;
+
+};
+
+/* Box Shadow */
+
+.box{
+
+    /* First px = Horizontal offset,
+       Second px = vertical offset,
+       Third px = Shadow Blur,
+       Fourth = Shadow Color */
+    box-shadow: 10px 12px 15px #000000;
+
+};
+
+/* List styles */
+
+ul{
+    /* it will give list style as circle(circle without filling) */
+    list-style: circle;
+
+    /* it will not display the list style */
+    list-style-type: none;
+
+    /* it will give list style as square */
+    list-style-type: square;
+
+    /* it will give list style as disc */
+    list-style-type: disc;
+
+    /* image as bullet points */
+    list-style-image: url("");
+
+    /* position of the list style */
+
+    /* it will move the bullet points inside the paragraph */
+    list-style-position : inside;
+
+}
+
+ol{
+    /* it will give list style as numbers(1,2,3) */
+    list-style-type: decimal;
+
+    /* it will give list sytle as lower alpha( a,b,c) */
+    list-style-type: lower-alpha;
+
+    /* it will give list style as upper alpha(A,B,C) */
+    list-style-type: upper-alpha;
+
+    /* it will give list style as lower roman(i,ii,iii) */
+    list-style-type: lower-roman;
+
+    /* it will give list style as upper roman(I,II,III) */
+    list-style-type: upper-roman;
+
+};
+
+
+/* Table Styling */
+
+table{
+
+    /* to change the border spacing of the table */
+    border-spacing: 10px;
+
+    /* if u dont want border for each table,
+    it can be removed using "collapse" */
+    border-collapse: collapse;
+
+};
+
+
+/* th = table head */
+th{
+
+}
+
+/* td = table data */
+td{
+
+};
+
+/* tr = table row */
+tr{
+
+};
+
+/* it will changes properties in the even rows of the table */
+tr:nth-child(even){
+
+    background-color: #f2f2f2;
+
+}
+
+
+/* Box sizing */
+
+.box{
+    
+    /* it is used to controls the padding and 
+    margin inside the box without changing its structure */
+    box-sizing: border-box;
+
+}
+
+
+/* Positions */
+/* default position is static */    
+
+/* Relative position */
+/* relative will be stayed on the same place after changing its position */
+
+
+.box{
+
+    /* after changing position to relative.
+    we give left,right,top,bottom,
+    this will change the offset of the element */
+    position: relative;
+    left: 20px;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+
+}
+
+/* Absolute position */
+/* But absolute will go to the top-left corner
+ of the parent element */
+
+.box{
+
+    /* after changing position to absolute.
+    we give left,right,top,bottom,
+    this will change the offset of the element */
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+
+}
+
+/* Fixed position */
+
+.box{
+
+    /*  it will be fixed on the same place
+     even after scrolling the page */
+    position: fixed;
+
+}
+
+/* Sticky position */
+
+.box{
+    /* initial,it will be relative,
+    but after reaching its given offset,
+     it will be fixed and stay on the offset */
+    position: sticky;
+    top: 20px;
+
+}
+
+
+/* Float  */
+
+.box{
+    /* it will be on the left side of the parent element
+     and act as a span */
+    float: left;
+}
+
+
+/* Gradient */
+/* Background gradient */
+
+/* Linear gradient */
+.box{
+    /* it will create a gradient effect on the background */
+    background: linear-gradient(red, blue);
+
+    /* From Left to right transition */
+    background: linear-gradient(To right, red, blue);
+
+    /* From Right to left transition */
+    background: linear-gradient(To left, red, blue);
+
+    /* For corner to corner transition */
+    background: linear-gradient(to bottom right, red, blue);
+    /* OR */
+    /* We can use Angles to specify the direction */
+    background: linear-gradient(45deg, red, blue);
+
+    /* We can change the strength of the gradient */
+    background: linear-gradient(45deg, red 20%, blue 80%);
+
+
+    /* Repeating Linear Gradient */
+    /* we should give the same color to the start and end */
+    background: linear-gradient(45deg, red 20%, blue 80%, red 100);
+
+}
+
+
+/* Radial gradient */
+.box{
+    /* it will create a gradient effect on the background */
+    background: radial-gradient(red, blue);
+
+    /* Repeating Radial Gradient */
+    /* we should give the same color to the start and end */
+    background: radial-gradient(red 20%, blue 80%, red 100%);
+
+}
+
+
+/* Unit Measurement */
+
+/* VW = Viewport Width */
+/* 1vw = 1% of the viewport width */
+/* it is used to measure the width of the viewport */
+
+
+/* VH = Viewport Height */
+/* 1vh = 1% of the viewport height */
+/* it is used to measure the height of the viewport */
+
+
+/* em = it is used to measure the size of the font */
+/* 1em = 16px */
+
+
+
+/* rem = it is used to measure the size of the font relative to the root element */
+/* 1rem = 16px */
+
+
+
+
+
+/* HTML Layout Tags */
+
+/* <header></header> */
+
+/* <footer></footer> */
+
+/* <nav></nav> */
+
+/* <articla></articla> */
+/* this is used for blog post */
+
+
+
+
+
+/* Flex box */
+
+.box{
+    /* flex = it is used to make the element flexible */
+    display: flex;
+
+    /* to make equal width for child containers inside a parent container */
+    flex: 1;
+
+    /* we can adjust the flex number to make the child container bigger or smaller */
+    flex: 2;
+
+}
+
+/* flex direction */
+/* flex-direction = it is used to specify the direction of the flexible items */
+
+
+.box{
+
+    /* it will make the child container horizontal */
+    flex-direction: row;
+
+    /* it will make the child container vertical */
+    flex-direction: column;
+}
+
+/* Order */
+/* To change the order of the child container */
+/* we can use the order property */
+
+.box{
+    /* first child container will be placed on 2 nd position */
+    order: 2;
+
+    /* 2nd child container will be placed on 1st position */
+    order: 1;
+
+}
+
+
+
+/* Justify content */
+/* this only applies on horizontal axis */
+
+.box{
+
+    /* this will make the child container to be placed at the center */
+    justify-content: center;
+
+    /* this will make the child container to be placed at the start */
+    justify-content: flex-start;
+
+    /* this will make the child container to be placed at the end */
+    justify-content: flex-end;
+
+    /* this will make the child container to be placed at the space between */
+    justify-content: space-between;
+
+    /* this will make the child container to be placed at the space around */
+    justify-content: space-around;
+
+    /* this will make the child container to be placed at the space evenly */
+    justify-content: space-evenly;
+
+}
+
+
+/* Align items */
+/* this only applies on vertical axis */
+
+.box{
+
+    /* this will make the child container to be placed at the center */
+    align-items: center;
+
+    /* this will make the child container to be placed at the start */
+    align-items: flex-start;
+
+    /* this will make the child container to be placed at the end */
+    align-items: flex-end;
+
+    /* this will make the child container to be strecthed.
+     But,the Height for the child container shold not be given */
+    align-items: stretch;
+
+}
+
+
+/* WRAP */
+/* Default is flex-wrap: nowrap */
+
+.box{
+    /* this will make the child container to be placed in a new line,
+     without shrinking its child container size*/
+    flex-wrap: wrap;
+
+}
+
+
+
+
+/* Transform */
+/* Default is transform: none */
+
+.box{
+/* ROTATE */
+
+    /* this will make the child container to be rotated 90 degree */
+    transform: rotate(90deg);
+    
+    /* this will rotate 90 deg in X axis */
+    transform: rotateX(90deg);
+    
+    /* this will rotate 90 deg in Y axis */
+    transform: rotateY(90deg);
+    
+    /* this will rotate 90 deg in Z axis */
+    transform: rotateZ(90deg);
+
+/* SCALE */
+
+    /* this will make the child container to be 2 times larger */
+    transform: scale(2);
+
+    /* this will make the child container to be 2 times larger in X axis */
+    transform: scalex(2);
+
+    /* this will make the child container to be 2 times larger in Y axis */
+    transform: scaley(2);
+
+    /* this will make the child container to be 2 times larger in Z axis */
+    transform: scalez(2);
+
+/* TRANSLATE */
+
+    /* this will change the  X & Y offset of the element */
+    transform: translate(10px, 20px);
+
+}
+
+
+
+
+
+/* Transition */
+/* changing from one state to another state while performing a task like 'hover' */
+
+
+.box{
+    /* this act a short hand for the transform properties */
+    transition: 0.5 ;
+
+    /* this will control the transition duration  */
+    transition-duration: 0.5s;
+
+    /* this will control the smoothness of the transition */
+    transition-timing-function: linear;
+    transition-timing-function: ease;
+    transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
+    transition-timing-function: ease-in-out;
+
+    /* this will make the transition delay */
+    transition-delay: 0.5s;
+
+}
+.box:hover{
+    /* this will change the background color of the box when it is hovered */
+    background-color:hsl(120, 100%, 50%);
+    /* this will transform the box when it is hovered */
+    transform: scale(1.2);
+}
+
+
+
+/* ANIMATION */
+/* animation is a bit different from transition, it is more like a sequence of steps that are performed
+in a specific order, and it can be repeated, paused, or reversed */
+
+.box{
+
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background-color: lightcoral;
+    
+    /* Animation name is required,we can give any name we want */
+    animation-name:circle;
+    
+    /* Duration of the animation */
+    animation-duration: 3s;
+    
+    /* it will stay in the last state(100%) of the animation */
+    animation-fill-mode: forwards;
+
+   
+    /* it controls the iteration of the animation(10 times) */
+    animation-iteration-count: 10;
+    /* it will make the animation loop */
+    animation-iteration-count:infinite;
+
+}
+
+@keyframes circle {
+    /* 100% is based on the animation-duration */
+    /* 100% = 3s
+       50% = 1.5s
+       0% = 0s */
+
+
+    100%{
+        background-color: cornflowerblue;
+        width:300px;
+        height:300px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries  */
+/* Media Queries should be given at last in the CSS file */
+
+@media(min-width: 801px){
+    .box{
+        /* styles for the screen size 801px and above */
+        background-color: blue;
+    }
+
+    body{
+        /* styles for the screen size 801px and above */
+        background-color: red;
+    }
+}
+
+
+
+
+
+/* Not Covered Topics */
+
+/* 1.flex shrink
+   2.flex grow
+   3.flex basis
+   4.align self
+   5.justify self
+   6.Grid
+
+    */
