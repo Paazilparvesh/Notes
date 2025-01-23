@@ -1,7 +1,21 @@
 
 
+    Keyword    -   Description
 
-// VARIABLES IN JAVASCRIPT
+//  var        -   Declares a variable
+//  let        -   Declares a block variable
+//  const      -   Declares a block constant
+//  switch     -   Marks a block of statements to be executed in different cases
+//  if         -   Marks a block of statements to be executed on a condition
+//  for        -   Marks a block of statements to be executed in a loop
+//  function   -   Declares a function
+//  return     -   Exits a function
+//  try        -   Implements error handling to a block of statements
+
+// ---------------------------------------------------------------------------------------------------------------
+
+
+VARIABLES :
 
 // "Var" is a Keyword. 
 // It is used to declare a variable in JavaScript. 
@@ -19,12 +33,12 @@ var x = 10;
 console.log(y);
 
 Output: 20
-
 // var can be accessible outside the block.
 
+// ---------------------------------------------------------------------------------------------------------------
 
 
-// "LET" IN JAVASCRIPT
+LET : 
 
 // "Let" is a keyword.
 // It is used to declare a variable in JavaScript.
@@ -43,6 +57,7 @@ console.log(y);
 
 Output: ReferenceError: "y is not defined"
 
+
 Example2:
 
 wrong:
@@ -55,9 +70,10 @@ correct:
 }
 // let is not accessible outside the block.
 
+// ---------------------------------------------------------------------------------------------------------------
 
 
-// "CONST" IN JAVASCRIPT
+CONST :
 
 // "Const" is a keyword.
 // It is used to declare a variable in JavaScript.
@@ -77,104 +93,719 @@ Output: 10
 
 // const cannnot change its value after declaring like "let" and "var".
 
+// ---------------------------------------------------------------------------------------------------------------
 
 
-// "VAR" VS "LET" VS "CONST"
+// Var VS Let VS Const :
 
 // "Var" is a global scope variable.   it can be accessible outside the block.
 // "Let" is a block scope variable.    it is not accessible outside the block.
 // "Const" is a block scope variable.  it cannot change its value after declaring.
 
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+
+COMMENTS :
+
+//  JavaScript comments can be used to Explain JavaScript code, and to make it more Readable.
+//  JavaScript comments can also be used to Prevent execution, when testing Alternative code
 
 
-// DATA TYPES IN JAVASCRIPT
+//  Types of Comments:
 
-// 1. Number
-// 2. String
-// 3. Boolean
-// 4. Undefined
-// 5. Null
-// 6. Object
-// 7. Symbol
+//     Single Line Comments     -    // 
+
+//     Multi-line Comments     -    /* */   
+
+
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+
+OPERATORS :
+
+/*   JavaScript provides various operators that perform operations on values
+     or variables. These operators can be categorized into different types
+     based on their functionality.                                             */
+
+
+//    Operator Type :   
+
+
+//    Arithmetic Operators         -        + , - , * , / , % , ++ , -- 
+
+//    Assignment Operators         -        = , += , -= , *= , /= , %=
+
+//    Comparison Operators         -        == , != , === , !== , > , < , >= , <=
+
+//    Logical Operators            -        &&
+
+//    Bitwise Operators            -        &
+
+//    String Operators             -        + 
+
+//    Conditional Operator         -        ? :
+
+//    Type Operators               -        ' typeof ' , ' instanceof '
+
+//    Unary Operators              -        + , - , ! , " , ' typeof ' , ' delete ' , ' void '
+
+
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+
+// 1. Arithmetic operators
+
+Addition : "+" 
+
+Example :
+
+    var x = 10;
+    var y = 20;
+
+    console.log(x + y);
+
+    Output: 30
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Subtraction : "-"
+
+Example :
+
+    var x = 20;
+    var y = 10;
+
+    console.log(x - y);
+
+    Output: 10
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Multiplication : "*"
+
+    var x = 10;
+    var y = 20;
+
+    console.log(x * y);
+
+    Output: 200
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Division : "/"
+
+    var x = 20;
+    var y = 10;
+
+    console.log(x / y);
+
+    Output: 2
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Modulus : "%"
+
+    var x = 20;
+    var y = 10;
+
+    console.log(x % y);
+
+    Output: 0
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Increment : "++"
+
+// Increment operators increase the value of the variable by 1.
+
+Example : "complex"
+
+let x = 10;
+let y = x++ + 5; // y = 10 + 5; x becomes 11
+let z = ++x + 5; // x becomes 12, z = 12 + 5
+
+
+types : 
+
+  1. Post Increment :
+
+// Post-increment: variable++
+// Post-increment (i++): Returns the value first, then increments it.
+
+    var x = 10;
+
+    console.log(x++);
+    console.log(x);
+
+    Output: 10
+            11
+
+  2. Pre Increment :
+
+// Pre-increment (++i): Increments the value first, then returns the updated value.
+// Pre-increment: ++variable
+
+    var x = 10;
+
+    console.log(++x);
+    console.log(x);
+
+    Output: 11
+            11
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Decrement : "--"
+
+// Both operators decrease the value of the variable by 1.
+
+Example : "complex"
+
+let x = 10;
+let y = x-- - 5; // y = 10 - 5; x becomes 9
+let z = --x - 5; // x becomes 8, z = 8 - 5
+
+Types :
+
+  1. Post Decrement :
+
+// Post-decrement: variable--
+// Post-decrement (i--): Returns the value first, then decrements it by 1.
+
+    var x = 10;
+
+    console.log(x--);
+    console.log(x);
+
+    Output: 10
+            9
+
+            
+  2. Pre Increment :
+
+// Pre-decrement: --variable
+// Pre-decrement (--i): Decrements the value by 1 first, then returns the updated value.
+
+    var x = 10;
+
+    console.log(--x);
+    console.log(x);
+
+    Output: 9
+            9
+
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+
+// 2. Assignment operator
+
+
+Assignment : "="
+
+    var x = 10;
+
+    console.log(x);
+
+    Output: 10
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Addition : "+="
+
+    var x = 10;
+    x += 20;
+
+    console.log(x);
+
+    Output: 30
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Subtraction : "-="
+
+    var x = 20;
+    x -= 10;
+
+    console.log(x);
+
+    Output: 10
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Multiplication : "*="
+
+    var x = 10;
+    x *= 20;
+
+    console.log(x);
+
+    Output: 200
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Division : "/="
+
+    var x = 20;
+    x /= 10;
+
+    console.log(x);
+
+    Output: 2
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Modulus : "%="
+
+    var x = 20;
+    x %= 10;
+
+    console.log(x);
+
+    Output: 0
+
+// ---------------------------------------------------------------------------------------------------------------    
+// ---------------------------------------------------------------------------------------------------------------
+
+// 3. Comparison Operators
+
+
+Equal : "=="
+
+    var x = 10;
+    var y = 20;
+
+    console.log(x == y);
+
+    Output: false
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Strict Equal : "==="
+
+    var x = 10;
+    var y = 10;
+
+    console.log(x === y);
+
+    Output: true
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Not Equal : "!="
+
+    var x = 10;
+    var y = 20;
+
+    console.log(x != y);
+
+    Output: true
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Strict Not Equal : "!=="
+
+    var x = 10;
+    var y = 20;
+
+    console.log(x !== y);
+
+    Output: true
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Greater Than : ">"
+
+    var x = 20;
+    var y = 10;
+
+    console.log(x > y);
+
+    Output: true
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Less Than : "<"
+
+    var x = 10;
+    var y = 20;
+
+    console.log(x < y);
+
+    Output: true
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Greater Than or Equal : ">="
+
+    var x = 20;
+    var y = 10;
+
+    console.log(x >= y);
+
+    Output: true
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Less Than or Equal : "<="
+
+    var x = 10;
+    var y = 20;
+
+    console.log(x <= y);
+
+    Output: true
+
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+
+// 4. Logical Operators
+
+
+Logical AND : "&&"
+
+    var x = 10;
+    var y = 20;
+
+    console.log(x < 20 && y > 10);
+
+    Output: true
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Logical OR : "||"
+
+    var x = 10;
+    var y = 20;
+
+    console.log(x < 20 || y < 10);
+
+    Output: true
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Logical NOT : "!"
+
+    var x = 10;
+
+    onsole.log(!(x < 20));
+
+    Output: false
+
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+
+// 5. Bitwise Operators
+
+
+Bitwise AND : "&"
+
+    var x = 5;
+    var y = 3;
+
+    console.log(x & y);
+
+    Output: 1
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Bitwise OR : "|"
+
+    var x = 5;
+    var y = 3;
+
+    console.log(x | y);
+
+    Output: 7
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Bitwise NOT : "~"
+
+    var x = 5;
+
+    console.log(~x);
+
+    Output: -6
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Bitwise XOR : "^"
+
+    var x = 5;
+    var y = 3;
+
+    console.log(x ^ y);
+
+    Output: 6
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Left Shift : "<<"
+
+    var x = 5;
+
+    console.log(x << 1);
+
+    Output: 10
+
+// ---------------------------------------------------------------------------------------------------------------
+
+Right Shift : ">>"
+
+    var x = 5;
+
+    console.log(x >> 1);
+
+    Output: 2
+
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+
+// 6. Type Operators
+
+
+typeof :
+
+    var x = 10;
+
+    console.log(typeof x);
+
+    Output: number
+
+// ---------------------------------------------------------------------------------------------------------------
+
+instanceof :
+
+    var x = new Array();
+
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+
+// 7. Other Operators
+
+
+Comma : ","
+
+    var x = 10, y = 20;
+
+    console.log(x, y);
+
+    Output: 10 20
+
+// ---------------------------------------------------------------------------------------------------------------
+
+delete :
+
+    var x = { name: "John", age: 30 };
+
+    delete x.age;
+
+    console.log(x);
+
+    Output: { name: "John" }
+
+// ---------------------------------------------------------------------------------------------------------------
+
+in :
+
+    var x = { name: "John", age: 30 };
+
+    console.log("name" in x);
+
+    Output: true
+
+// ---------------------------------------------------------------------------------------------------------------
+
+new :
+
+    var x = new Date();
+
+    console.log(x);
+
+    Output: current date and time
+
+// ---------------------------------------------------------------------------------------------------------------
+
+this :
+
+    var x = { name: "John", age: 30 };
+
+    console.log(x.name);
+
+    Output: John
+
+// ---------------------------------------------------------------------------------------------------------------
+
+void :
+
+    var x = 10;
+
+    console.log(void x);
+
+    Output: undefined
+
+
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+
+DATA TYPES :
+
+Syntax:
+
+    console.log(typeof(10))
+    
+    output : number
+
+
+Types :
+
+1. Primitive Data Type : 
 
 // 1. Number: It is used to represent numbers.
 // 2. String: It is used to represent text.
 // 3. Boolean: It is used to represent true or false.
 // 4. Undefined: It is used to represent undefined value.
 // 5. Null: It is used to represent null value.
-// 6. Object: It is used to represent complex data structures.
+// 6. symbol: A unique and immutable value used as object keys.
+// 7. Bigint: Represents integers larger than Number.MAX_SAFE_INTEGER.
 
-// Example:
+2. Non-Primitive Data Type :
 
+// 8. Object: It is used to represent complex data structures.
+// 9. array: An ordered list of values (can include mixed types).
+// 10.Date: Represents date and time.
 
-// Number
+// ---------------------------------------------------------------------------------------------------------------
 
+// 1. Number
 
-var x = 10;
-var y = 20;
-var z = x + y;
+// Represents integers and floating-point numbers.
+// Special values: Infinity , -Infinity and NaN (Not-a-Number).
 
-console.log(z);
+let age = 25;    // Integer
+let pi = 3.14;   // Float
+let x = NaN;     // Not-a-Number
 
-Output: 30
+Example :
 
+    var x = "10";
+    var y = "20";
+    var z = x + y;
 
-// String
+    console.log(z);
 
+    Output: 30
 
-var x = "Hello";
-var y = "World";
-var z = x + y;
+// ---------------------------------------------------------------------------------------------------------------
 
-console.log(z);
+// 2. String
 
-Output: HelloWorld
+// Represents text data enclosed in single quotes ' ', double quotes " ", or backticks `.
 
+let name = "Alice";
+let greeting = `Hello, ${name}!`;
 
-// Boolean
+Example :
 
+    var x = "Hello";
+    var y = "World";
+    var z = x + y;
 
-var x = 10;
-var y = 20;
-var z = x > y;
+    console.log(z);
 
-console.log(z);
+    Output: HelloWorld
 
-Output: false
+// ---------------------------------------------------------------------------------------------------------------
 
+// 3. Boolean
 
-// Undefined
+// Represents logical values: "true" or "false".
 
+let isAdmin = true;
+let isLoggedIn = false;
 
-var x;
+Example :
 
-console.log(x);
+    var x = 10;
+    var y = 20;
+    var z = x > y;
 
-Output: undefined
+    console.log(z);
 
+    Output: false
 
-// Null
+// ---------------------------------------------------------------------------------------------------------------
 
+// 4. Undefined
 
-var x = null;
+// A variable declared but not assigned a value has the type "undefined".
 
-console.log(x);
+Example :
 
-Output: null
+    var x; // undefined
 
+    console.log(x);
 
-// Object
+    Output: undefined
 
+// ---------------------------------------------------------------------------------------------------------------
 
-var x = { name: "John", age: 30 };
+// 5. Null
 
-console.log(x);
+// Represents an intentional absence of any value. It is an object type.
 
-Output: { name: "John", age: 30 }
+Example :
 
+    var x = null;
 
-// Symbol
+    console.log(x);
 
+    Output: null
+
+// ---------------------------------------------------------------------------------------------------------------
+
+// 6. symbol
+
+//  A unique and immutable value used as object keys.
+
+Example :
+
+let sym = Symbol('unique');
+
+// ---------------------------------------------------------------------------------------------------------------
+
+//  7.Bigint
+
+// Represents integers larger than Number.MAX_SAFE_INTEGER.
+
+Example : 
+
+let bigNumber = 123456789012345678901234567890n;
+
+// ---------------------------------------------------------------------------------------------------------------
+
+// 8. Object
+
+// A collection of key-value pairs.
+
+Example :
+
+    var x = { name: "John", age: 30 };
+
+    console.log(x);
+
+    Output: { name: "John", age: 30 }
+
+// ---------------------------------------------------------------------------------------------------------------
+
+// 9. Array
+
+// An ordered list of values (can include mixed types).
+
+Example :
 
 var x = Symbol("Hello");
 
@@ -182,413 +813,191 @@ console.log(x);
 
 Output: Symbol(Hello)
 
+// ---------------------------------------------------------------------------------------------------------------
+
+// 10.date
+
+// Represents date and time.
+
+Example :
+
+let today = new Date();
+
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
 
 
-// OPERATORS IN JAVASCRIPT
+FUNCTIONS :
 
-// 1. Arithmetic Operators
+// A function is a block of code designed to perform a particular task.
+// A function is executed when we calls the function name.
 
-// + (Addition)
+Syntax :
 
-var x = 10;
-var y = 20;
+    function <function name>( ) { };
 
-console.log(x + y);
+Example :
 
-Output: 30
+    function JavaScript() {
 
-// - (Subtraction)
+        console.log("Hey there");
 
-var x = 20;
-var y = 10;
+    };
 
-console.log(x - y);
+    hi()  // we need to call the function name to execute
 
-Output: 10
+// ---------------------------------------------------------------------------------------------------------------    
 
-// * (Multiplication)
+// 1. Function Declaration
 
-var x = 10;
-var y = 20;
+// A function declaration is the most common way to define a function.
+// It's a named function that is hoisted to the top of its scope,
+// meaning you can call it before it’s defined in your code.
 
-console.log(x * y);
+// Hoisting: Function declarations are hoisted, so you can call the function before its definition
 
-Output: 200
+// Named Functions: The function has a name, which is used to call it.
 
-// / (Division)
+Syntax :
 
-var x = 20;
-var y = 10;
+    function functionName(parameters) {
+        // Function body
+        return value; // Optional
 
-console.log(x / y);
-
-Output: 2
-
-// % (Modulus)
-
-var x = 20;
-var y = 10;
-
-console.log(x % y);
-
-Output: 0
-
-// ++ (Increment)
-
-var x = 10;
-
-console.log(x++);
-console.log(x);
-
-Output: 10
-        11
-
-// -- (Decrement)
-
-var x = 10;
-
-console.log(x--);
-console.log(x);
-
-Output: 10
-        9
+    }
 
 
+Example :
 
+    function add(x, y) {
+    
+        return x + y;
 
-// 2. Assignment Operators
+    };
 
-
-// = (Assignment)
-
-var x = 10;
-
-console.log(x);
-
-Output: 10
-
-
-// += (Addition Assignment)
-
-var x = 10;
-x += 20;
-
-console.log(x);
+console.log(add(10, 20));
 
 Output: 30
 
+// ---------------------------------------------------------------------------------------------------------------
 
-// -= (Subtraction Assignment)
+// 2. Function Expression
 
-var x = 20;
-x -= 10;
+// A function expression defines a function as part of an expression.
+// These functions can be named or anonymous, 
+// and they are not hoisted like function declarations.
 
-console.log(x);
+// Not Hoisted: You cannot call a function expression before its definition
 
-Output: 10
+Syntax :
 
+    const functionName = function(parameters) {
+        // Function body
+        return value; // Optional
+    
+    };
 
-// *= (Multiplication Assignment)
+Example :
 
-var x = 10;
-x *= 20;
+var add = function(x, y) {
+    
+    return x + y;
 
-console.log(x);
+};
 
-Output: 200
+console.log(add(10, 20));
 
+Output: 30
 
-// /= (Division Assignment)
+// ---------------------------------------------------------------------------------------------------------------
 
-var x = 20;
-x /= 10;
+// 3. Arrow Function
 
-console.log(x);
+// Arrow functions are a shorthand for writing functions in JavaScript.
+// They are always anonymous and are especially useful for concise one-line functions.
+// Arrow functions have a different behavior for this.
 
-Output: 2
+Syntax :
 
+    const functionName = (parameters) => {
+        // Function body
+        return value; // Optional
+    };
 
-// %= (Modulus Assignment)
+Example :
 
-var x = 20;
-x %= 10;
+var add = (x, y) => x + y;
 
-console.log(x);
+console.log(add(10, 20));
 
-Output: 0
+Output: 30
 
 
-// 3. Comparison Operators
 
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
 
-// == (Equal)
 
-var x = 10;
-var y = 20;
+PARAMETERS :
 
-console.log(x == y);
+// "parameters" refers to the variables or placeholders that you define when declaring a function.
+// These parameters serve as inputs to the function and allow you to pass data into the function when you call it.
 
-Output: false
+    function add(a,b) {
 
+        console. log(a+b)
+    
+    }
 
-// === (Strict Equal)
+    add(10,2)
 
-var x = 10;
-var y = 10;
+    output: 12
 
-console.log(x === y);
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
 
-Output: true
+RETURN :
 
+//  the return keyword is used within a function to specify the value that the function 
+//  should produce as its result or return to the caller. When a function is executed and encounters a 
+//  return statement, it immediately stops executing and returns the specified value to the calling code.
 
-// != (Not Equal)
+Example :
 
-var x = 10;
-var y = 20;
+    function add(a,b) {
+   
+        return (a+b)
 
-console.log(x != y);
+    }
 
-Output: true
+    let a = add(10,10)
 
+    console.log(a)
 
-// !== (Strict Not Equal)
+    output: 20
 
-var x = 10;
-var y = 20;
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
 
-console.log(x !== y);
 
-Output: true
-
-
-// > (Greater Than)
-
-var x = 20;
-var y = 10;
-
-console.log(x > y);
-
-Output: true
-
-
-// < (Less Than)
-
-var x = 10;
-var y = 20;
-
-console.log(x < y);
-
-Output: true
-
-
-// >= (Greater Than or Equal)
-
-var x = 20;
-var y = 10;
-
-console.log(x >= y);
-
-Output: true
-
-
-// <= (Less Than or Equal)
-
-var x = 10;
-var y = 20;
-
-console.log(x <= y);
-
-Output: true
-
-
-
-// 4. Logical Operators
-
-
-// && (Logical AND)
-
-var x = 10;
-var y = 20;
-
-console.log(x < 20 && y > 10);
-
-Output: true
-
-
-// || (Logical OR)
-
-var x = 10;
-var y = 20;
-
-console.log(x < 20 || y < 10);
-
-Output: true
-
-
-// ! (Logical NOT)
-
-var x = 10;
-
-console.log(!(x < 20));
-
-Output: false
-
-
-
-// 5. Bitwise Operators
-
-
-// & (Bitwise AND)
-
-var x = 5;
-var y = 3;
-
-console.log(x & y);
-
-Output: 1
-
-
-// | (Bitwise OR)
-
-var x = 5;
-var y = 3;
-
-console.log(x | y);
-
-Output: 7
-
-
-// ~ (Bitwise NOT)
-
-var x = 5;
-
-console.log(~x);
-
-Output: -6
-
-
-// ^ (Bitwise XOR)
-
-var x = 5;
-var y = 3;
-
-console.log(x ^ y);
-
-Output: 6
-
-
-// << (Left Shift)
-
-var x = 5;
-
-console.log(x << 1);
-
-Output: 10
-
-
-// >> (Right Shift)
-
-var x = 5;
-
-console.log(x >> 1);
-
-Output: 2
-
-
-
-// 6. Type Operators
-
-
-// typeof
-
-var x = 10;
-
-console.log(typeof x);
-
-Output: number
-
-
-// instanceof
-
-var x = new Array();
-
-
-
-
-// 7. Other Operators
-
-
-// , (Comma)
-
-var x = 10, y = 20;
-
-console.log(x, y);
-
-Output: 10 20
-
-
-// delete
-
-var x = { name: "John", age: 30 };
-
-delete x.age;
-
-console.log(x);
-
-Output: { name: "John" }
-
-
-// in
-
-var x = { name: "John", age: 30 };
-
-console.log("name" in x);
-
-Output: true
-
-
-// new
-
-var x = new Date();
-
-console.log(x);
-
-Output: current date and time
-
-
-// this
-
-var x = { name: "John", age: 30 };
-
-console.log(x.name);
-
-Output: John
-
-
-// void
-
-var x = 10;
-
-console.log(void x);
-
-Output: undefined
-
-
-
-// CONDITIONAL STATEMENTS IN JAVASCRIPT
+CONDITIONAL STATEMENTS :
 
 // 1. If Statement
 
-var x = 10;
+    var x = 10;
 
-if (x > 5) {
+    if (x > 5) {
 
     console.log("x is greater than 5");
 
-}
+    }
 
-Output: x is greater than 5
+    Output: x is greater than 5
 
+
+// ---------------------------------------------------------------------------------------------------------------
 
 // 2. If Else Statement
 
@@ -606,6 +1015,7 @@ if (x > 5) {
 
 Output: x is greater than 5
 
+// ---------------------------------------------------------------------------------------------------------------
 
 // 3. If Else If Statement
 
@@ -627,6 +1037,7 @@ if (x > 5) {
 
 Output: x is greater than 5
 
+// ---------------------------------------------------------------------------------------------------------------
 
 // 4. Switch Statement
 
@@ -651,7 +1062,13 @@ Output: x is equal to 10
 
 
 
-// LOOPS IN JAVASCRIPT
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+
+
+
+LOOPS :
 
 // 1. For Loop
 
@@ -736,53 +1153,11 @@ Output: 10
         20
         30  
 
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
 
 
-// FUNCTIONS IN JAVASCRIPT
-
-// 1. Function Declaration
-
-function add(x, y) {
-    
-    return x + y;
-
-}
-
-console.log(add(10, 20));
-
-Output: 30
-
-
-// 2. Function Expression
-
-var add = function(x, y) {
-    
-    return x + y;
-
-}
-
-console.log(add(10, 20));
-
-Output: 30
-
-
-// 3. Arrow Function
-
-var add = (x, y) => x + y;
-
-console.log(add(10, 20));
-
-Output: 30
-
-
-
-// 4. Function Constructor
-
-var add = new Function("x", "y", "return x + y");
-
-console.log(add(10, 20));
-
-Output: 30
 
 
 
@@ -817,7 +1192,7 @@ var x = { name: "John", age: 30 };
 
 x.greet = function() {
 
-    return "Hello " + this.name;    
+    return "Hello " + this.name; 
 
 }
 
