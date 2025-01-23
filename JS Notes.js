@@ -12,7 +12,10 @@
 Example:
 
 var x = 10;
-{ var y = 20; }
+{ 
+    var y = 20;
+}
+
 console.log(y);
 
 Output: 20
@@ -32,7 +35,10 @@ Output: 20
 Example1:
 
 let x = 10;
-{ let y = 20; }
+{ 
+    let y = 20; 
+}
+
 console.log(y);
 
 Output: ReferenceError: "y is not defined"
@@ -64,6 +70,7 @@ Example:
 
 const x = 10;
       x = 20;
+
 console.log(y);
 
 Output: 10
@@ -106,6 +113,7 @@ Output: 10
 var x = 10;
 var y = 20;
 var z = x + y;
+
 console.log(z);
 
 Output: 30
@@ -117,6 +125,7 @@ Output: 30
 var x = "Hello";
 var y = "World";
 var z = x + y;
+
 console.log(z);
 
 Output: HelloWorld
@@ -128,6 +137,7 @@ Output: HelloWorld
 var x = 10;
 var y = 20;
 var z = x > y;
+
 console.log(z);
 
 Output: false
@@ -137,6 +147,7 @@ Output: false
 
 
 var x;
+
 console.log(x);
 
 Output: undefined
@@ -146,6 +157,7 @@ Output: undefined
 
 
 var x = null;
+
 console.log(x);
 
 Output: null
@@ -155,6 +167,7 @@ Output: null
 
 
 var x = { name: "John", age: 30 };
+
 console.log(x);
 
 Output: { name: "John", age: 30 }
@@ -164,6 +177,7 @@ Output: { name: "John", age: 30 }
 
 
 var x = Symbol("Hello");
+
 console.log(x);
 
 Output: Symbol(Hello)
@@ -248,6 +262,7 @@ Output: 10
 // = (Assignment)
 
 var x = 10;
+
 console.log(x);
 
 Output: 10
@@ -257,6 +272,7 @@ Output: 10
 
 var x = 10;
 x += 20;
+
 console.log(x);
 
 Output: 30
@@ -266,6 +282,7 @@ Output: 30
 
 var x = 20;
 x -= 10;
+
 console.log(x);
 
 Output: 10
@@ -275,6 +292,7 @@ Output: 10
 
 var x = 10;
 x *= 20;
+
 console.log(x);
 
 Output: 200
@@ -284,6 +302,7 @@ Output: 200
 
 var x = 20;
 x /= 10;
+
 console.log(x);
 
 Output: 2
@@ -293,6 +312,7 @@ Output: 2
 
 var x = 20;
 x %= 10;
+
 console.log(x);
 
 Output: 0
