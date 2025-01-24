@@ -986,8 +986,13 @@ CONDITIONAL STATEMENTS :
 
 // 1. If Statement
 
-    var x = 10;
+    if (condition) {
+        // Code to be executed if the condition is true
+    }   // if the condition is false, the code inside the block will not be executed.
 
+Example :
+   
+    var x = 10;
     if (x > 5) {
 
     console.log("x is greater than 5");
@@ -997,21 +1002,30 @@ CONDITIONAL STATEMENTS :
     Output: x is greater than 5
 
 
+
+
 // ---------------------------------------------------------------------------------------------------------------
 
 // 2. If Else Statement
 
-var x = 10;
+    if (condition) {
+        // Code to be executed if the condition is true
+    } else {
+        // Code to be executed if the condition is false
+    }
 
-if (x > 5) {
+Example :
 
-    console.log("x is greater than 5");
+    var x = 10;
+    if (x > 5) {
 
-} else {
+        console.log("x is greater than 5");
 
-    console.log("x is less than 5");
+    } else {
 
-}
+        console.log("x is less than 5");
+
+    }
 
 Output: x is greater than 5
 
@@ -1019,21 +1033,31 @@ Output: x is greater than 5
 
 // 3. If Else If Statement
 
-var x = 10;
+    if (condition) {
+        // Code to be executed if the condition is true
+    } else if ( condition ) {
+        // Code to be executed if the condition is true
+    } else {
+        // Code to be executed if the condition is false
+    }
 
-if (x > 5) {
+Example :
+
+    var x = 10;
+
+    if (x > 5) {
     
-    console.log("x is greater than 5");
+        console.log("x is greater than 5");
 
-} else if (x < 5) {
+    } else if (x < 5) {
 
-    console.log("x is less than 5");
+        console.log("x is less than 5");
 
-} else {
+    } else {
 
-    console.log("x is equal to 5");
+        console.log("x is equal to 5");
 
-}
+    }
 
 Output: x is greater than 5
 
@@ -1041,22 +1065,22 @@ Output: x is greater than 5
 
 // 4. Switch Statement
 
-var x = 10;
+    var x = 10;
 
-switch (x) {
+    switch (x) {
 
-    case 5:
-        console.log("x is equal to 5");
-        break;
+        case 5:
+            console.log("x is equal to 5");
+            break;
 
-    case 10:
-        console.log("x is equal to 10");
-        break;
+        case 10:
+            console.log("x is equal to 10");
+            break;
 
-    default:
-        console.log("x is not equal to 5 or 10");
+        default:
+            console.log("x is not equal to 5 or 10");
 
-}
+    }
 
 Output: x is equal to 10
 
@@ -1072,11 +1096,11 @@ LOOPS :
 
 // 1. For Loop
 
-for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < 5; i++) {
 
-    console.log(i);
+        console.log(i);
 
-}
+    }
 
 Output: 0
         1
@@ -1085,15 +1109,14 @@ Output: 0
 
 // 2. While Loop
 
-var i = 0;
+    var i = 0;
 
-while (i < 5) {
+    while (i < 5) {
     
-    console.log(i);
+        console.log(i);
+        i++;
 
-    i++;
-
-}
+    }
 
 Output: 0
         1
@@ -1105,9 +1128,9 @@ Output: 0
 
 // 3. Do While Loop
 
-var i = 0;
+    var i = 0;
 
-do {
+    do {
 
     console.log(i);
 
