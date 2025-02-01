@@ -139,7 +139,7 @@ OPERATORS :
 
 //    Comparison Operators         -        == , != , === , !== , > , < , >= , <=
 
-//    Logical Operators            -        &&
+//    Logical Operators            -        && , || , !
 
 //    Bitwise Operators            -        &
 
@@ -463,7 +463,14 @@ Less Than or Equal : "<="
 // 4. Logical Operators
 
 
+
 Logical AND : "&&"
+
+Syntax : 
+    console.log(true && true); // true
+    console.log(true && false); // false
+
+Example :
 
     var x = 10;
     var y = 20;
@@ -476,6 +483,11 @@ Logical AND : "&&"
 
 Logical OR : "||"
 
+Syntax :
+    console.log(true || false); // true
+
+Example :    
+
     var x = 10;
     var y = 20;
 
@@ -486,6 +498,11 @@ Logical OR : "||"
 // ---------------------------------------------------------------------------------------------------------------
 
 Logical NOT : "!"
+
+Syntax :
+    console.log(!(true)); // False
+
+Example :zxs
 
     var x = 10;
 
@@ -999,7 +1016,7 @@ Example :
 
     }
 
-    Output: x is greater than 5
+    Output: "x is greater than 5"
 
 
 
@@ -1027,7 +1044,7 @@ Example :
 
     }
 
-Output: x is greater than 5
+Output: "x is greater than 5"
 
 // ---------------------------------------------------------------------------------------------------------------
 
@@ -1059,7 +1076,7 @@ Example :
 
     }
 
-Output: x is greater than 5
+Output: "x is greater than 5"
 
 // ---------------------------------------------------------------------------------------------------------------
 
@@ -1082,7 +1099,7 @@ Output: x is greater than 5
 
     }
 
-Output: x is equal to 10
+Output: "x is equal to 10"
 
 
 
@@ -1095,6 +1112,23 @@ Output: x is equal to 10
 LOOPS :
 
 // 1. For Loop
+
+// In JavaScript, a for loop is a control flow statement used to repeatedly execute a block of
+// code based on a specified condition.
+
+// "FOR" loop stops when the condition we gave returns "false"
+
+Syntax :
+
+for (initialization; condition; iteration) {
+     // Code to be executed in each iteration 
+
+     // Initialization = Where to start
+     // condition = Condition to be given
+     // Iteration = How many times to iterate 
+}
+
+Example :
 
     for (var i = 0; i < 5; i++) {
 
@@ -1181,8 +1215,97 @@ Output: 10
 // ---------------------------------------------------------------------------------------------------------------
 
 
+// DOM - Document Object Model
+
+// DOM stands for Document Object Model, an interface for web documents
+// that represents their structure as a tree-like object. It allows dynamic
+// manipulation of page content using languages like JavaScript.
+
+// the HTML DOM structure is in tree structure
+
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+
+// DOM Manipulation :
+
+//   Selecting and Manipulating Elements Using ID
+
+//     What is document.getEIementBylD() ?
+//         It is a method in the Document Object Model (DOM) that allows you to select a
+//         single element from the document using its unique ID attribute. IDs should be unique
+//         within the document, meaning that there should be only one element with a specific
+//         ID. If multiple elements have the same ID, this method will only select the first one it
+//         encounters.
+
+Example :
+
+    <hl id="h1">Hello World</h1>
+
+    // selecting hl tag
+    var hi=document.getElementById("h1")
+    console.log(hl.textContent)
+    hl.textContent="Bye World"
+
+// "document.getElementById" is used to get the ID from the HTML Document
+// ".textContent" is used to manipulate the Text or Content Inside The ID 
 
 
+// .textContent is used for tags with content like p,hi,Etc.
+// .value is used for tags like input tag
+
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+
+Events :
+
+// An event in JavaScript is an action or occurrence that happens
+// within a web page, such as a user's interaction (clicking a button) or
+// a page loading.
+
+// Event                 Description
+
+// onchange        -     An HTML element has been changed
+
+// onclick         -     The user clicks an HTML element
+
+// onmouseover     -     The user moves the mouse over an HTML element
+
+// onmouseout      -     The user moves the mouse away from an HTML element
+
+// onkeydown       -     The user pushes a keyboard key
+ 
+// onload          -     The browser has finished loading the page
+
+
+// OnClick Event :
+
+Example :
+    <body>
+    <p id="subtit1e">Hello</p>
+    <button onclick="changeword()">C1ick</button>
+    </body>
+    
+    function changeword() {
+    document.getE1ementById ("subtitle").textContent = "Bye"
+    }
+    
+Output : Hello 
+// after clicking button
+         Bye
+
+
+
+Event Handler :
+
+// An event handler in JavaScript is a function that responds to an
+// event when it occurs. It listens for specific events and executes
+// code to perform actions based on those events, creating interactive
+// and dynamic web applications.
+
+
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
 
 
 // OBJECTS IN JAVASCRIPT
