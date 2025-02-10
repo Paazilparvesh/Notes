@@ -894,13 +894,141 @@ in a specific order, and it can be repeated, paused, or reversed */
 
 }
 
+/* // --------------------------------------------------------------------------------------------------------------- */
+/* // --------------------------------------------------------------------------------------------------------------- */
+/* // --------------------------------------------------------------------------------------------------------------- */
 
 
+/* Combinators */
+
+/* 1. Descendant Combinator */
+
+div p {
+    background-color: yellow;
+}
+
+/* 2. Child Combinator (>) */
+
+div > p {
+    background-color: yellow;
+}
+
+/* 3. Subsequent-sibling Combinator (~) */
+
+div ~ p {
+    background-color: yellow;
+}
+
+/* 4. Comma Combinator (,) */
+
+div , p {
+    background-color: yellow;
+}
+
+/* // --------------------------------------------------------------------------------------------------------------- */
+/* // --------------------------------------------------------------------------------------------------------------- */
+/* // --------------------------------------------------------------------------------------------------------------- */
 
 
+/* Pseudo-classes */
+
+selector:pseudo-class {
+    property: value;
+}
 
 
+/* 1. Anchor Pseudo-classes */
 
+
+    /* unvisited link */
+    a:link {
+        color: #FF0000;
+    }
+  
+    /* visited link */
+    a:visited {
+        color: #00FF00;
+    }
+  
+    /* mouse over link */
+    a:hover {
+        color: #FF00FF;
+    }
+  
+    /* selected link */
+    a:active {
+        color: #0000FF;
+    }
+
+
+/* 2. Hover Psuedo Classes */
+
+div:hover {
+    background-color: blue;
+}
+
+
+/* 3. The :first-child Pseudo-class */
+
+p:first-child {
+    color: blue;
+}
+
+/* // --------------------------------------------------------------------------------------------------------------- */
+/* // --------------------------------------------------------------------------------------------------------------- */
+/* // --------------------------------------------------------------------------------------------------------------- */
+
+
+/* Pseudo Elements */
+
+/* 1. ::first-line Pseudo-element */
+
+p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+}
+
+/* 2. ::first-letter Pseudo-element */
+
+p::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+}
+
+/* 3. ::before Pseudo-element */
+
+h1::before {
+    content: url(smiley.gif);
+}
+
+/* 4. ::after Pseudo-element */
+
+h1::after {
+    content: url(smiley.gif);
+}
+
+/* 5. ::marker Pseudo-element */ Used to stylr makrker of the list
+
+::marker {
+    color: red;
+    font-size: 23px;
+}
+
+/* 6. ::selection Pseudo-element */ Used when user selects our text
+
+::selection {
+    color: red;
+    background: yellow;
+}
+
+/* 7. ::file-selector-button Pseudo-element */
+
+::file-selector-button {
+    border: 2px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: lightgreen;
+}
 
 
 
