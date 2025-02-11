@@ -1030,6 +1030,66 @@ h1::after {
     background-color: lightgreen;
 }
 
+/* // --------------------------------------------------------------------------------------------------------------- */
+/* // --------------------------------------------------------------------------------------------------------------- */
+/* // --------------------------------------------------------------------------------------------------------------- */
+
+
+Math function 
+    1. calc()
+    2. max()
+    3. min()
+
+1. calc() :
+
+    The calc() function is used to perform calculations when specifying CSS property values.
+
+Syntax :
+
+    calc(expression)
+
+Example :
+    div {
+        width: calc(100% - 50px);
+        height: calc(100% - 50px);
+        background-color: yellow;
+    }
+
+2. max() :
+    
+    The max() function is used to return the largest of zero or more numbers.
+
+Syntax :
+
+    max(value1, value2, ...)
+
+Example :
+    div {
+        width: max(100px, 50px);
+        height: max(100px, 50px);
+        background-color: yellow;
+    }
+
+3. min() :
+
+    The min() function is used to return the smallest of zero or more numbers.  
+
+Syntax :
+        
+        min(value1, value2, ...)    
+
+Example :
+    div {
+        width: min(100px, 50px);
+        height: min(100px, 50px);
+        background-color: yellow;
+    }
+
+
+
+/* // --------------------------------------------------------------------------------------------------------------- */
+/* // --------------------------------------------------------------------------------------------------------------- */
+/* // --------------------------------------------------------------------------------------------------------------- */
 
 
 
